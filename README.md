@@ -17,8 +17,6 @@ I am software engineer student at UTAA. I'm passionate about ML and AI.
 - 💡 Interested in: machine learning
 - 📫 Reach me: karincaliekin@gmail.com
 
-## 🛠️ Teknolojiler
-
 ## 🛠️ Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
