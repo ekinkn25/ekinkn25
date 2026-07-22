@@ -7,8 +7,17 @@ I am software engineer student at UTAA. I'm passionate about ML and AI.
 ## 🤖 What will i code tomorrow?
 
 <!--START_SECTION:ml-prediction-->
-🤖 Not enough commit history yet to make a prediction — check back in a few days!
+🤖 **AI prediction** (for Thursday): most likely I'll be working on %66 ⚙️ backend and %34 🎨 frontend.
+
+<sub>Last updated: 22.07.2026 20:22 · generated using a RandomForest model trained on my past commit data</sub>
 <!--END_SECTION:ml-prediction-->
+
+📊 About This Week
+<!--START_SECTION:weekly-summary-->
+
+📊 This week: 13 commits · mostly in Python (backend) · most productive day so far: Monday (6 commits)
+
+<!--END_SECTION:weekly-summary-->
 
 ## 🚀 About Me
 
