@@ -1,0 +1,42 @@
+name: Update README with ML Prediction
+
+on:
+  schedule:
+    # Her gece 21:00 UTC = TR saatiyle 00:00 (yaz saati farkina gore ayarla)
+    - cron: "0 21 * * *"
+  workflow_dispatch: {}  # elle de tetikleyebilmek icin
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repoyu checkout et
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Bagimliliklari yukle
+        run: pip install -r requirements.txt
+
+      - name: Commit verisini topla
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.actor }}
+        run: python scripts/fetch_commits.py
+
+      - name: Modeli egit ve README'yi guncelle
+        run: python scripts/train_predict.py
+
+      - name: Degisiklikleri commit'le
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md data/commits.csv
+          git diff --cached --quiet && echo "Degisiklik yok" || git commit -m "🤖 Günlük ML tahmini güncellendi"
+          git push
