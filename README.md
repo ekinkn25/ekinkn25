@@ -1,5 +1,7 @@
 # Hi, I am Ekin 👋
 
+<p align="center"> <img src="assets/fingerprint.svg" alt="commit fingerprint" width="100%"/> </p>
+
 I am software engineer student at UTAA. I'm passionate about ML and AI.
 
 ## 🤖 What will i code tomorrow?
