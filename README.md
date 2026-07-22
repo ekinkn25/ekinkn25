@@ -1,30 +1,38 @@
-# Hi, I am Ekin 👋
+<h1 align="center"> Hi, I am Ekin!</h1>
 
-<img src="assets/constellation.svg" alt="commit constellation" width="100%"/>
+<img src="assets/preview.png" alt="commit constellation" width="100%"/>
 
-I am software engineer student at UTAA. I'm passionate about ML and AI.
+<h3 align="center">I am a software engineering student at UTAA. I'm passionate about ML and AI.</h3>
 
-## 🤖 What will i code tomorrow?
+<br/><br/>
+
+## What will I code tomorrow?
 
 <!--START_SECTION:ml-prediction-->
-🤖 **AI prediction** (for Thursday): most likely I'll be working on %66 ⚙️ backend and %34 🎨 frontend.
-
-<sub>Last updated: 22.07.2026 20:22 · generated using a RandomForest model trained on my past commit data</sub>
+Not enough commit history yet to make a prediction — check back in a few days!
 <!--END_SECTION:ml-prediction-->
 
-📊 About This Week
+<br/>
+
+## About This Week
+
 <!--START_SECTION:weekly-summary-->
-
-📊 This week: 13 commits · mostly in Python (backend) · most productive day so far: Monday (6 commits)
-
+No commits logged yet this week.
 <!--END_SECTION:weekly-summary-->
 
-## 🚀 About Me
+<br/>
+
+## About Me
 
 - 🌱 Currently learning: designing & evaluating LLM systems — structured JSON output, prompt calibration, RAG-grounded chat, and writing eval harnesses that actually catch regressions
+
 - 🔭 Currently working on: NextGenCV — an AI career assistant (FastAPI + Gemini) that scores CVs against 22 roles, generates learning paths, and coaches users via a RAG chatbot
+
 - 💡 Interested in: machine learning
+
 - 📫 Reach me: karincaliekin@gmail.com
+
+<br/>
 
 ## 🛠️ Tech Stack
 
@@ -40,5 +48,6 @@ I am software engineer student at UTAA. I'm passionate about ML and AI.
 ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![React Native](https://img.shields.io/badge/React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
