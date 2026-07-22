@@ -36,8 +36,10 @@ jobs:
       - name: Haftalik ozeti guncelle
         run: python scripts/weekly_summary.py
 
-      - name: Commit fingerprint gorselini uret
-        run: python scripts/fingerprint.py
+      - name: Commit takimyildizi gorselini uret
+        env:
+          GITHUB_USERNAME: ${{ github.actor }}
+        run: python scripts/constellation.py
 
       - name: Degisiklikleri commit'le
         run: |
@@ -49,8 +51,8 @@ jobs:
           else
             echo "Uyari: data/commits.csv olusmadi, atlaniyor."
           fi
-          if [ -f assets/fingerprint.svg ]; then
-            git add assets/fingerprint.svg
+          if [ -f assets/constellation.svg ]; then
+            git add assets/constellation.svg
           fi
-          git diff --cached --quiet && echo "Degisiklik yok" || git commit -m "🤖 Günlük ML tahmini + haftalık özet + fingerprint güncellendi"
+          git diff --cached --quiet && echo "Degisiklik yok" || git commit -m "🤖 Günlük ML tahmini + haftalık özet + takımyıldızı güncellendi"
           git push

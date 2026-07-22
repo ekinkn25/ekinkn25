@@ -1,6 +1,6 @@
 # Hi, I am Ekin 👋
 
-<p align="center"> <img src="assets/fingerprint.svg" alt="commit fingerprint" width="100%"/> </p>
+<img src="assets/constellation.svg" alt="commit constellation" width="100%"/>
 
 I am software engineer student at UTAA. I'm passionate about ML and AI.
 
