@@ -37,6 +37,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md data/commits.csv
+          git add README.md
+          if [ -f data/commits.csv ]; then
+            git add data/commits.csv
+          else
+            echo "Uyari: data/commits.csv olusmadi, sadece README ekleniyor."
+          fi
           git diff --cached --quiet && echo "Degisiklik yok" || git commit -m "🤖 Günlük ML tahmini güncellendi"
           git push
