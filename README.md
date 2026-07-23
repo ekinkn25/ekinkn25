@@ -1,7 +1,4 @@
-<!-- <h1 align="center"> Hi, I am Ekin!</h1> -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=Ekin+Karincali;Hello+World..." alt="Typing SVG" />
-</p>
+<h1 align="center"> Hi, I am Ekin!</h1>
 
 <img src="assets/constellation.svg" alt="commit constellation" width="100%"/>
 
