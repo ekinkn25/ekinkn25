@@ -1,4 +1,7 @@
-<h1 align="center"> Hi, I am Ekin!</h1>
+<!-- <h1 align="center"> Hi, I am Ekin!</h1> -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=Ekin+Karincali;Hello+World..." alt="Typing SVG" />
+</p>
 
 <img src="assets/constellation.svg" alt="commit constellation" width="100%"/>
 
@@ -51,3 +54,4 @@
 ![React Native](https://img.shields.io/badge/React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Profile views](https://komarev.com/ghpvc/?username=ekinkn25&color=38BDF8&style=for-the-badge&label=PROFILE+VIEWS)
