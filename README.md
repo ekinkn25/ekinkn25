@@ -9,7 +9,7 @@
 ## What will I code tomorrow?
 
 <!--START_SECTION:ml-prediction-->
-Not enough commit history yet to make a prediction — check back in a few days!
+🤖 Not enough commit history yet to make a prediction — check back in a few days!
 <!--END_SECTION:ml-prediction-->
 
 <br/>
@@ -17,7 +17,7 @@ Not enough commit history yet to make a prediction — check back in a few days!
 ## About This Week
 
 <!--START_SECTION:weekly-summary-->
-No commits logged yet this week.
+📊 No commits logged yet this week.
 <!--END_SECTION:weekly-summary-->
 
 <br/>
