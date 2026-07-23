@@ -1,6 +1,6 @@
 <h1 align="center"> Hi, I am Ekin!</h1>
 
-<img src="assets/preview.svg" alt="commit constellation" width="100%"/>
+<img src="assets/constellation.svg" alt="commit constellation" width="100%"/>
 
 <h3 align="center">I am a software engineering student at UTAA. I'm passionate about ML and AI.</h3>
 
