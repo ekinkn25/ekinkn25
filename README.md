@@ -1,4 +1,4 @@
-<h1 align="center"> Hi, I am Ekin!</h1>
+<h1 align="center"> Hi, I am Ekin Karıncalı!</h1>
 
 <img src="assets/constellation.svg" alt="commit constellation" width="100%"/>
 
