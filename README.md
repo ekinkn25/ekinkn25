@@ -9,7 +9,9 @@
 ## What will I code tomorrow?
 
 <!--START_SECTION:ml-prediction-->
-🤖 Not enough commit history yet to make a prediction — check back in a few days!
+🤖 **AI prediction** (for Thursday): most likely I'll be working on 100% ⚙️ backend and 0% 🎨 frontend.
+
+<sub>Last updated: 2026-07-29 11:21 · generated using a RandomForest model trained on my past commit data</sub>
 <!--END_SECTION:ml-prediction-->
 
 <br/>
@@ -17,7 +19,7 @@
 ## About This Week
 
 <!--START_SECTION:weekly-summary-->
-📊 No commits logged yet this week.
+📊 **This week:** 11 commits · mostly in **Python** (backend) · most productive day so far: **Wednesday** (11 commits)
 <!--END_SECTION:weekly-summary-->
 
 <br/>
