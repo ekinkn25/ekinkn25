@@ -119,14 +119,16 @@ def build_constellation_svg(df: pd.DataFrame, username: str) -> str:
                 f'stroke="#64748b" stroke-width="1" opacity="0.5"/>'
             )
 
-    # yildizlar -- sadece beyaz "sparkle" sekli, ekstra hale/daire yok
+    # yildizlar -- kategoriye gore renkli "sparkle" sekli, ekstra hale/daire yok
     stars = []
     for _, row in daily.iterrows():
         x, y = points[row["date"]]
         frac = row["count"] / max_count
         r = 6 + frac * 14
+        hue = CATEGORY_HUE.get(row["category"], 40)
+        star_color = hsl(hue, 85, 72)
         star_path = sparkle_path(x, y, r)
-        stars.append(f'<path d="{star_path}" fill="#f8fafc"/>')
+        stars.append(f'<path d="{star_path}" fill="{star_color}"/>')
 
     # lejant
     category_totals = df["category"].value_counts(normalize=True)
