@@ -41,13 +41,19 @@ LANGUAGE_COLOR = {
     "Jupyter Notebook": "#DA5B0B",
 }
 
-WIDTH, HEIGHT = 500, 170
+WIDTH, HEIGHT = 800, 200
 
 
 def build_placeholder_svg(message: str) -> str:
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}">
-  <rect width="{WIDTH}" height="{HEIGHT}" rx="14" fill="#0f172a" stroke="#334155"/>
-  <text x="20" y="90" fill="#94a3b8" font-family="monospace" font-size="13">{message}</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3d2436"/>
+      <stop offset="100%" stop-color="#2a1a26"/>
+    </linearGradient>
+  </defs>
+  <rect width="{WIDTH}" height="{HEIGHT}" rx="18" fill="url(#bg)" stroke="#7c4a63"/>
+  <text x="30" y="{HEIGHT/2}" fill="#e9c9d6" font-family="monospace" font-size="14">{message}</text>
 </svg>"""
 
 
@@ -67,32 +73,33 @@ def build_card_svg(data: dict) -> str:
     stars = data.get("stargazers_count", 0)
     forks = data.get("forks_count", 0)
     language = data.get("language") or "Unknown"
-    lang_color = LANGUAGE_COLOR.get(language, "#94a3b8")
+    lang_color = LANGUAGE_COLOR.get(language, "#e9c9d6")
 
-    desc_lines = wrap_text(description, width_chars=52, max_lines=2)
+    desc_lines = wrap_text(description, width_chars=85, max_lines=2)
     desc_svg = "".join(
-        f'<text x="24" y="{78 + i * 20}" fill="#cbd5e1" font-family="monospace" font-size="13">{line}</text>'
+        f'<text x="34" y="{100 + i * 26}" fill="#e9c9d6" font-family="monospace" font-size="16">{line}</text>'
         for i, line in enumerate(desc_lines)
     )
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#4a2c3d"/>
+      <stop offset="55%" stop-color="#3d2436"/>
+      <stop offset="100%" stop-color="#2a1a26"/>
     </linearGradient>
   </defs>
-  <rect width="{WIDTH}" height="{HEIGHT}" rx="14" fill="url(#bg)" stroke="#334155"/>
+  <rect width="{WIDTH}" height="{HEIGHT}" rx="18" fill="url(#bg)" stroke="#7c4a63"/>
 
-  <text x="24" y="34" fill="#38BDF8" font-family="monospace" font-size="16" font-weight="bold">📌 {name}</text>
+  <text x="34" y="52" fill="#F9A8D4" font-family="monospace" font-size="24" font-weight="bold">📌 {name}</text>
 
   {desc_svg}
 
-  <circle cx="30" cy="140" r="5" fill="{lang_color}"/>
-  <text x="42" y="145" fill="#e2e8f0" font-family="monospace" font-size="12">{language}</text>
+  <circle cx="42" cy="{HEIGHT - 32}" r="6" fill="{lang_color}"/>
+  <text x="56" y="{HEIGHT - 27}" fill="#f3e3ea" font-family="monospace" font-size="15">{language}</text>
 
-  <text x="160" y="145" fill="#e2e8f0" font-family="monospace" font-size="12">⭐ {stars}</text>
-  <text x="230" y="145" fill="#e2e8f0" font-family="monospace" font-size="12">🍴 {forks}</text>
+  <text x="220" y="{HEIGHT - 27}" fill="#f3e3ea" font-family="monospace" font-size="15">⭐ {stars}</text>
+  <text x="320" y="{HEIGHT - 27}" fill="#f3e3ea" font-family="monospace" font-size="15">🍴 {forks}</text>
 </svg>"""
 
 

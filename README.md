@@ -30,7 +30,7 @@
 
 - 🔭 Currently working on: NextGenCV — an AI career assistant (FastAPI + Gemini) that scores CVs against 22 roles, generates learning paths, and coaches users via a RAG chatbot. I own the Role Scoring & Learning Path Agent: role-fit scoring prompts (0–100 with rationale), an agent that turns CV gaps into step-by-step learning plans, and the AI career coach system prompt used across the app.
   <br/><br/>
-  <a href="https://github.com/afragul/YZTA-Bootcamp"> <img src="assets/contribution-card.svg" alt="YZTA-Bootcamp contribution" /> </a>
+  <a href="https://github.com/afragul/YZTA-Bootcamp"> <img src="assets/contribution-card.svg" alt="YZTA-Bootcamp contribution" width="100%"/> </a>
  <br/>
  
 - 💡 Interested in: machine learning
