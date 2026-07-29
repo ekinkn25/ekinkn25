@@ -33,7 +33,7 @@
   <a href="https://github.com/afragul/YZTA-Bootcamp"> <img src="assets/contribution-card.svg" alt="YZTA-Bootcamp contribution" width="100%"/> </a>
  <br/>
  
-- 💡 Interested in: machine learning
+- 💡 Interested in: Machine learning, AI 
 
 - 📫 Reach me: karincaliekin@gmail.com
 
