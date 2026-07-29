@@ -24,8 +24,10 @@ import csv
 import time
 import requests
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 API_URL = "https://api.github.com"
+LOCAL_TZ = ZoneInfo("Europe/Istanbul")
 TOKEN = os.environ["GITHUB_TOKEN"]
 USERNAME = os.environ["GITHUB_USERNAME"]
 
@@ -90,6 +92,22 @@ def get_dominant_language(full_name: str):
     return dominant
 
 
+def parse_commit_date(date_str: str) -> datetime:
+    """
+    GitHub commit tarihlerini guvenle parse eder. Bazen 'Z' (UTC) ile,
+    bazen milisaniye + saat dilimi farkiyla (ornek: '+03:00') geliyor.
+    Hepsini tutarli olsun diye Turkiye saatine (Europe/Istanbul) cevirir --
+    aksi halde 'en verimli saatin' gibi istatistikler karisik cikar.
+    """
+    normalized = date_str.strip()
+    if normalized.endswith("Z"):
+        normalized = normalized[:-1] + "+00:00"
+    dt = datetime.fromisoformat(normalized)
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=ZoneInfo("UTC"))
+    return dt.astimezone(LOCAL_TZ)
+
+
 def search_all_commits():
     """Kullanicinin yazari oldugu tum public commit'leri arama API'siyla toplar."""
     all_items = []
@@ -132,7 +150,7 @@ def main():
             continue
 
         commit_date_str = item["commit"]["author"]["date"]
-        dt = datetime.strptime(commit_date_str, "%Y-%m-%dT%H:%M:%SZ")
+        dt = parse_commit_date(commit_date_str)
 
         dominant_lang = get_dominant_language(full_name)
         category = LANGUAGE_CATEGORY.get(dominant_lang, "diger")
