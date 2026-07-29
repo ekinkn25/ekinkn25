@@ -41,6 +41,12 @@ jobs:
           GITHUB_USERNAME: ${{ github.actor }}
         run: python scripts/constellation.py
 
+      - name: Katkida bulunulan repo kartini uret
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONTRIBUTION_REPO: "afragul/YZTA-Bootcamp"
+        run: python scripts/repo_card.py
+
       - name: Degisiklikleri commit'le
         run: |
           git config user.name "github-actions[bot]"
@@ -53,6 +59,9 @@ jobs:
           fi
           if [ -f assets/constellation.svg ]; then
             git add assets/constellation.svg
+          fi
+          if [ -f assets/contribution-card.svg ]; then
+            git add assets/contribution-card.svg
           fi
           git diff --cached --quiet && echo "Degisiklik yok" || git commit -m "🤖 Günlük ML tahmini + haftalık özet + takımyıldızı güncellendi"
           git push
