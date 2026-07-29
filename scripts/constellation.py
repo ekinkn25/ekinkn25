@@ -31,6 +31,19 @@ CATEGORY_HUE = {
 }
 
 
+def sparkle_path(cx: float, cy: float, r: float) -> str:
+    """4 koseli, sivri uclu 'sparkle' yildiz sekli icin SVG path uretir
+    (goruseldeki gibi -- yukari/asagi/sag/sol sivri uclar, aralari icbukey)."""
+    k = r * 0.4478
+    return (
+        f"M {cx:.1f},{cy - r:.1f} "
+        f"C {cx:.1f},{cy - r + k:.1f} {cx - r + k:.1f},{cy:.1f} {cx - r:.1f},{cy:.1f} "
+        f"C {cx - r + k:.1f},{cy:.1f} {cx:.1f},{cy + r - k:.1f} {cx:.1f},{cy + r:.1f} "
+        f"C {cx:.1f},{cy + r - k:.1f} {cx + r - k:.1f},{cy:.1f} {cx + r:.1f},{cy:.1f} "
+        f"C {cx + r - k:.1f},{cy:.1f} {cx:.1f},{cy - r + k:.1f} {cx:.1f},{cy - r:.1f} Z"
+    )
+
+
 def hsl(h, s, l, a=1.0):
     if a >= 1.0:
         return f"hsl({h:.0f}, {s:.0f}%, {l:.0f}%)"
@@ -106,17 +119,19 @@ def build_constellation_svg(df: pd.DataFrame, username: str) -> str:
                 f'stroke="#64748b" stroke-width="1" opacity="0.5"/>'
             )
 
-    # yildizlar
+    # yildizlar -- beyaz "sparkle" sekli + arkasinda kategori renginde
+    # yumusak bir hale (galaksi/parilti hissi icin)
     stars = []
     for _, row in daily.iterrows():
         x, y = points[row["date"]]
         frac = row["count"] / max_count
-        r = 3 + frac * 9
+        r = 6 + frac * 14
         hue = CATEGORY_HUE.get(row["category"], 40)
-        glow_r = r + 6
+        glow_r = r * 2.2
+        star_path = sparkle_path(x, y, r)
         stars.append(
-            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{glow_r:.1f}" fill="{hsl(hue, 80, 60, 0.18)}"/>'
-            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" fill="{hsl(hue, 80, 70)}"/>'
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{glow_r:.1f}" fill="{hsl(hue, 85, 65, 0.25)}"/>'
+            f'<path d="{star_path}" fill="#f8fafc"/>'
         )
 
     # lejant
