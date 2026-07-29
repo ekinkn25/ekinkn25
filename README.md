@@ -1,7 +1,4 @@
-<!-- <h1 align="center"> Hi, I am Ekin!</h1> -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=Ekin+Karincali;Hello+World..." alt="Typing SVG" />
-</p>
+<h1 align="center"> Hi, I am Ekin Karıncalı!</h1>
 
 <img src="assets/constellation.svg" alt="commit constellation" width="100%"/>
 
@@ -12,7 +9,9 @@
 ## What will I code tomorrow?
 
 <!--START_SECTION:ml-prediction-->
-🤖 Not enough commit history yet to make a prediction — check back in a few days!
+🤖 **AI prediction** (for Thursday): most likely I'll be working on 100% ⚙️ backend and 0% 🎨 frontend.
+
+<sub>Last updated: 2026-07-29 11:21 · generated using a RandomForest model trained on my past commit data</sub>
 <!--END_SECTION:ml-prediction-->
 
 <br/>
@@ -20,7 +19,7 @@
 ## About This Week
 
 <!--START_SECTION:weekly-summary-->
-📊 No commits logged yet this week.
+📊 **This week:** 11 commits · mostly in **Python** (backend) · most productive day so far: **Wednesday** (11 commits)
 <!--END_SECTION:weekly-summary-->
 
 <br/>
@@ -29,8 +28,10 @@
 
 - 🌱 Currently learning: designing & evaluating LLM systems — structured JSON output, prompt calibration, RAG-grounded chat, and writing eval harnesses that actually catch regressions
 
-- 🔭 Currently working on: NextGenCV — an AI career assistant (FastAPI + Gemini) that scores CVs against 22 roles, generates learning paths, and coaches users via a RAG chatbot
-
+- 🔭 Currently working on: NextGenCV — an AI career assistant (FastAPI + Gemini) that scores CVs against 22 roles, generates learning paths, and coaches users via a RAG chatbot. I own the Role Scoring & Learning Path Agent: role-fit scoring prompts (0–100 with rationale), an agent that turns CV gaps into step-by-step learning plans, and the AI career coach system prompt used across the app.
+  <br/><br/>
+  <a href="https://github.com/afragul/YZTA-Bootcamp"> <img src="assets/contribution-card.svg" alt="YZTA-Bootcamp contribution" /> </a>
+ <br/>
 - 💡 Interested in: machine learning
 
 - 📫 Reach me: karincaliekin@gmail.com
