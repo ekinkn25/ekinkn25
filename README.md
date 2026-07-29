@@ -28,8 +28,9 @@
 
 - 🌱 Currently learning: designing & evaluating LLM systems — structured JSON output, prompt calibration, RAG-grounded chat, and writing eval harnesses that actually catch regressions
 
-- 🔭 Currently working on: NextGenCV — an AI career assistant (FastAPI + Gemini) that scores CVs against 22 roles, generates learning paths, and coaches users via a RAG chatbot
-
+- 🔭 Currently working on: NextGenCV — an AI career assistant (FastAPI + Gemini) that scores CVs against 22 roles, generates learning paths, and coaches users via a RAG chatbot. I own the Role Scoring & Learning Path Agent: role-fit scoring prompts (0–100 with rationale), an agent that turns CV gaps into step-by-step learning plans, and the AI career coach system prompt used across the app.
+  <a href="https://github.com/afragul/YZTA-Bootcamp"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=afragul&repo=YZTA-Bootcamp&theme=dark" alt="YZTA-Bootcamp" /> </a>
+ 
 - 💡 Interested in: machine learning
 
 - 📫 Reach me: karincaliekin@gmail.com
