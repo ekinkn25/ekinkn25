@@ -41,6 +41,7 @@
 
 ## 🛠️ Tech Stack
 
+![Profile views](https://komarev.com/ghpvc/?username=ekinkn25&color=38BDF8&style=for-the-badge&label=PROFILE+VIEWS)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -56,4 +57,4 @@
 ![React Native](https://img.shields.io/badge/React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Profile views](https://komarev.com/ghpvc/?username=ekinkn25&color=38BDF8&style=for-the-badge&label=PROFILE+VIEWS)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
