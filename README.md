@@ -25,18 +25,15 @@
 <br/>
 
 ## About Me
-
-- 🌱 Currently learning: designing & evaluating LLM systems — structured JSON output, prompt calibration, RAG-grounded chat, and writing eval harnesses that actually catch regressions
-
-- 🔭 Currently working on: NextGenCV — an AI career assistant (FastAPI + Gemini) that scores CVs against 22 roles, generates learning paths, and coaches users via a RAG chatbot. I own the Role Scoring & Learning Path Agent: role-fit scoring prompts (0–100 with rationale), an agent that turns CV gaps into step-by-step learning plans, and the AI career coach system prompt used across the app.
+- 🌱 Currently learning: building end-to-end mobile + AI products — cross-platform Flutter clients on top of FastAPI services, hybrid relational/document data models (SQLite + MongoDB), on-device ML, and RAG pipelines that ground LLM answers in a real recipe corpus instead of hallucinating them
+- 🔭 Currently working on: Kiler — a calorie tracker & smart pantry assistant (Flutter + FastAPI + Groq/LLaMA 3) that tracks what's actually in your kitchen via photograph scanning and Open Food Facts and answers "what can I cook without blowing my calorie budget?" with RAG-grounded recipe suggestions, plus auto-generated shopping lists from low-stock items.
   <br/><br/>
-  <a href="https://github.com/afragul/YZTA-Bootcamp"> <img src="assets/contribution-card.svg" alt="YZTA-Bootcamp contribution" width="100%"/> </a>
  <br/>
  
-- 💡 Interested in: Machine learning, AI 
-
+- 💡 Interested in: Machine Learning, AI 
 - 📫 Reach me: karincaliekin@gmail.com
-
+<br/>
+<a href="https://github.com/ekinkn25/kiler"> <img src="assets/contribution-card.svg" alt="Kiler contribution" width="100%"/> </a>
 <br/>
 
 ## 🛠️ Tech Stack
