@@ -33,7 +33,7 @@
 - 💡 Interested in: Machine Learning, AI 
 - 📫 Reach me: karincaliekin@gmail.com
 <br/>
-<a href="https://github.com/ekinkn25/kiler"> <img src="assets/contribution-card.svg" alt="Kiler contribution" width="100%"/> </a>
+<a href="https://github.com/afragul/YZTA-Bootcamp"> <img src="assets/contribution-card.svg" alt="Kiler contribution" width="100%"/> </a>
 <br/>
 
 ## 🛠️ Tech Stack
